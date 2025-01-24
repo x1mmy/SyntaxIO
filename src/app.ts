@@ -4,7 +4,9 @@
 import express, { Express, Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import { connectDB } from './config/database';
-// morgan is a logging middleware that logs HTTP requests
+import authRoutes from './routes/authRoutes';
+import dotenv from 'dotenv';
+dotenv.config();
 
 // Initialize express app - creates a new Express application instance
 const app: Express = express()
@@ -28,11 +30,14 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     res.status(500).send('Something broke!');
 });
 
-// Routes
+// ## Routes
 // Basic health check endpoint - useful for monitoring if service is running
 app.get('/health', (req: Request, res: Response) => {
     res.status(200).json({ status: 'OK' });
 });
+
+app.use('/api/auth', authRoutes);
+
 
 // Server configuration
 // Use environment variable PORT if available, otherwise default to 3000

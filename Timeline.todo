@@ -1,0 +1,36 @@
+MONTH 1:
+    Week 1:
+
+    ✔ Setup development environment @done(25-01-23 15:11)
+    ✔ Initialize Node/Express backend with TypeScript @done(25-01-23 15:11)
+    ✔ Create MongoDB schemas (users, searches, cache) @done(25-01-23 17:17)
+
+    - Basic user authentication API
+        ☐ Register user
+        ✔ Login user @done(25-01-23 18:50)
+        ☐ Logout user
+        ☐ Get user profile
+        ☐ Update user profile
+        ☐ Delete user
+        ☐ User is authicated - !!! need fixing
+    
+    Week 2:
+    
+    - React frontend setup with TypeScript
+    - Authentication UI flows
+    - Basic dashboard layout
+    - API integration
+    
+    Week 3:
+    
+    VS Code extension skeleton
+    WebView setup
+    Basic sidebar integration
+    Extension packaging
+    
+    Week 4:
+    
+    - Testing infrastructure
+    - CI/CD pipeline
+    - Documentation
+    - Initial deployment setup

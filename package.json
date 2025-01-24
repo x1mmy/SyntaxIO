@@ -6,7 +6,9 @@
     "dev": "ts-node src/app.ts",
     "build": "tsc",
     "start": "node dist/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:models": "ts-node src/tests/modelTest.ts",
+    "test:auth": "ts-node src/tests/authTests.ts"
   },
   "keywords": [],
   "author": "",
@@ -21,9 +23,12 @@
     "mongoose": "^8.9.5"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^22.10.8",
+    "axios": "^1.7.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   }
